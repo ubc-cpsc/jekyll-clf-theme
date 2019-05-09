@@ -1,0 +1,22 @@
+---
+---
+{{ reference }}
+{% if entry.abstract %}
+<a data-target="#{{ key }}_abstract" data-toggle="collapse" href="#{{ key }}_abstract" onclick='return false;'>ABS</a>
+{% endif %}
+
+<a data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</a>
+
+{% if link %}
+<a href="{{ site.url }}{{ link }}" onClick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
+{% endif %}
+
+<span id="{{ key }}_materials">
+
+  {% if entry.abstract %}
+  <p id="{{ key }}_abstract" class="collapse">{{ entry.abstract }}</p>
+  {% endif %}
+
+  <div id="{{ key }}_bibtex" class="pre pre-scrollable collapse"><pre>{{ entry.bibtex }}</pre></div>
+
+</span>

@@ -1,0 +1,5 @@
+// Negative index isn't meant to be focused by the user.
+// https://stackoverflow.com/questions/32911355/whats-the-tabindex-1-in-bootstrap-for
+[tabindex="-1"]:focus {
+  outline: none;
+}

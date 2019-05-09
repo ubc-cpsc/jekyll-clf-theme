@@ -1,0 +1,79 @@
+@import "variables";
+
+.full-width-container {
+    background-color: #fff;
+}
+.full-width .full-width-container {
+    margin: 0 !important;
+}
+
+
+@media (max-width: 979px) {
+    .full-width #ubc7-header .container,
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.content > :not(div) {
+  // Line measure.
+  max-width: 72rem;
+}
+
+.content {
+    a:hover {
+        text-decoration: underline;
+    }
+    ol {
+        counter-reset: list;
+    }
+    ol > li {
+        list-style-position: none;
+        position: relative;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    ul > li {
+        margin: 5px 0;
+    }
+    ul {
+        padding: 0 20px;
+    }
+    ol {
+        padding: 0 30px;
+    }
+    ol > li:before {
+        content: "[" counter(list, decimal) "] ";
+        counter-increment: list;
+        position: absolute;
+        left: -30px;
+    }
+    blockquote {
+        border-left: 5px solid #333333;
+        margin: 20px 0 20px 0;
+        padding: 2px 8px 2px 8px;
+        font-style: italic;
+    }
+    .profile-picture {
+        height: $image-size;
+        width: $image-size;
+        position: relative;
+        margin: -10px 0 0 15px;
+        float: right;
+        border-radius: 50%;
+        p & {
+            padding: 0;
+            margin: 0;
+        }
+        @media (max-width: $small-width) {
+            img {
+                margin-top: -5px;
+            }
+        }
+    }
+    img {
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+---
+---
+@import "variables";
+
+@import 'base/reset';
+
+@import 'base/typography';
+@import 'base/blockquote';
+@import 'base/code';
+@import 'base/table';
+@import 'base/form';
+@import 'base/figure';
+@import 'base/fixes';
+@import 'base/list';
+
+@import 'utility';
+@import 'unit';
+@import 'local.clf.fixes';
+
+
+
+/* Institute Image */
+
+#ins-logo {
+  margin: 2rem auto;
+  display: block;
+  max-width: 300px;
+  text-align: center;
+}
+
+@import "components/typography";
+@import "components/navbar";
+@import "components/social-icons";

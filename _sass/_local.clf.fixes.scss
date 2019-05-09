@@ -1,0 +1,89 @@
+@import 'variables';
+
+/**
+ * $file
+ * To fix inconsistencies with the locally-hosted CLF CSS
+ */
+
+footer {
+  background-color: inherit;
+}
+
+#ubc7-unit-social-icons i {
+  color: #fff;
+  background-color: $accent;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+// Hide external link.
+#ubc7-unit-social-icons span.ext {
+  display: none;
+}
+
+// Use the same font everywhere.
+#ubc7-global-footer,
+#ubc7-global-menu,
+#ubc7-minimal-footer,
+#ubc7-unit,
+input,
+button {
+  font-family: $font-family;
+}
+
+#ubc7-unit .btn,
+#ubc7-unit .navbar .btn-navbar {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+}
+
+.btn,
+.btn:focus,
+.btn:hover,
+.btn:active {
+  box-shadow: none;
+  border: 0;
+  color: $accent;
+  background-color: transparent;
+}
+
+// Undo the forced width of 206px in the CLF.
+input,
+textarea,
+.uneditable-input {
+  width: inherit;
+}
+
+input[type="text"] {
+  height: auto;
+  line-height: inherit;
+}
+
+#ubc7-header {
+  box-sizing: content-box;
+}
+/* Remove the inset shadows and text shadows from the unit area */
+#ubc7-unit {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#ubc7-unit-name a,
+#ubc7-unit-name a:hover {
+  text-shadow: none;
+}
+
+// Get the white up arrow.
+.ubc7-arrow.up-arrow.white {
+  background-position: -1207px -225px;
+}
+
+
+#ubc7-unit-menu .nav > li {
+  margin: 0;
+}

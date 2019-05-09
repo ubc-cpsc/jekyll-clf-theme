@@ -1,0 +1,61 @@
+
+//
+// Build Variables, don't touch
+//
+
+$max-width: 700px;
+$med-width: 600px;
+$small-width: 480px;
+
+// MEDIA QUERIES AND GRIDS
+// -------------------------
+
+$grid-gutter-width: 30px;
+$screen-md: 980px;
+$container-large-desktop: (1170px + $grid-gutter-width);
+
+// Fonts.
+// -------------------------
+$font-family-serif: 'Merriweather', Georgia, serif;
+$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+$font-family: $font-family-sans-serif;
+
+// UBC Colours.
+// -------------------------
+$ubc-blue: #002145;
+$ubc-medium-blue: #0055b7;
+$ubc-light-blue: #00A7E1;
+$ubc-grey: #2f5d7c;
+$ubc-light-grey: #5e869f;
+$ubc-lighter-grey: #98b2c3;
+$ubc-silver-grey: #c3d0d8;
+$ubc-silver: #d7e0e7;
+$silver: #cfcfd0;
+
+
+// Greys.
+// -------------------------
+$black: #000;
+$gray-darker: #222;
+$gray-dark: #444;
+$gray: #555;
+$gray-light: #999;
+$gray-lighter: #eee;
+$white: #fff;
+
+
+// Customization Variables
+
+
+$accent: $ubc-medium-blue;
+$unit-color: $accent;
+
+$image-size: 85px;
+
+
+$link-color: $ubc-medium-blue;
+
+
+

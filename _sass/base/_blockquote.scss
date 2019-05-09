@@ -1,0 +1,9 @@
+@import '../variables';
+
+blockquote {
+  border-left: 8px solid $accent;
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 1em;
+  padding-right: 2em;
+}

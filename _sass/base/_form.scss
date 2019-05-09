@@ -1,0 +1,219 @@
+@import '../variables';
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+label {
+  display: table;
+  margin: 0 0 0.1em;
+  padding: 0;
+  font-weight: bold;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+// Fieldsets.
+fieldset {
+  border: 1px solid darken(#fcfcfa, 15%);
+  background-color: #fcfcfa;
+  border-radius: 3px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 0.25em;
+}
+
+/**
+ * Limits extra long instances of select elements to the max width allowed
+ * to avoid breaking layouts.
+ */
+select {
+  max-width: 100%;
+}
+
+// CLF override.
+button,
+input {
+  font-size: 1.6rem;
+  font-family: $font-family;
+  vertical-align: baseline;
+}
+
+// CLF override.
+input {
+  width: auto;
+}
+
+label {
+  display: table;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select,
+// CWL override [type="text"].
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid $gray-dark;
+  border-radius: 0;
+  color: $gray-dark;
+
+  // Avoid this because of inline blocks, let the label break the line.
+  // display: block;
+
+  margin: 0.2em 0;
+  max-width: 72rem;
+
+  padding: .5rem .8rem;
+
+  &:focus {
+    outline: 0.2rem solid rgba(82, 168, 236, 0.8);
+    transition: outline ease-in-out .2s;
+  }
+}
+
+input[type="image"] {
+  border: 0;
+}
+
+select {
+  background: #fff url("../img/arrow-both.svg") no-repeat right 1.3rem center;
+  background-size: 1rem;
+  padding-right: 3rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  display: inline-block;
+}
+[type="checkbox"],
+[type="radio"] {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  border: 0;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+[type=checkbox] + label,
+[type=radio] + label {
+  font-weight: 400;
+  margin-left: 0.6rem;
+}
+
+[type=checkbox]::before,
+[type=radio]::before {
+  background-color: #fff;
+  content: '\a0';
+  display: inline-block;
+  text-indent: 0.15em;
+  vertical-align: middle;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  cursor: pointer;
+}
+
+[type=checkbox]::before {
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0 0.2rem $gray-dark;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 1px;
+  margin-right: 0.6em;
+  width: 2rem;
+}
+
+[type=radio]::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.2rem #ffffff, 0 0 0 0.4rem $gray-dark;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin-left: 3px;
+  margin-right: 0.75em;
+  width: 1.4rem;
+}
+
+[type=checkbox]:checked::before,
+[type=radio]:checked::before {
+  background-color: #accent;
+  box-shadow: 0 0 0 0.2rem #accent;
+}
+
+[type=radio]:checked::before {
+  box-shadow: 0 0 0 0.2rem #fff, 0 0 0 0.4rem #accent;
+}
+
+[type=checkbox]:checked::before,
+[type=checkbox]:checked:disabled::before {
+  background-image: url("../img/correct8.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+[type=radio]:focus::before {
+  outline: 0.2rem solid rgba(82, 168, 236, 0.8);
+  outline-offset: 6px;
+}
+
+[type=checkbox]:disabled + label {
+  color: #d6d7d9;
+}
+
+[type=checkbox]:focus::before {
+  outline: 0.2rem solid rgba(82, 168, 236, 0.8);
+  outline-offset: 3px;
+}
+
+[type=checkbox]:disabled::before,
+[type=radio]:disabled::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 0.2rem $gray-light;
+  cursor: not-allowed;
+}
