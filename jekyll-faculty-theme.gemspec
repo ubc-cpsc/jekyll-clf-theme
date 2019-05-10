@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "ubccs-faculty-jekyll-theme"
+  spec.name          = "jekyll-faculty-theme"
   spec.version       = "0.1.0"
   spec.authors       = ["Joël Pittet"]
   spec.email         = ["pittet@cs.ubc.ca"]
