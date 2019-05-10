@@ -1,0 +1,20 @@
+
+
+    <!-- UBC Unit Navigation -->
+    <div id="ubc7-unit-menu" class="navbar" role="navigation">
+        <div class="navbar-inner ">
+            <div class="container">
+                <div class="nav-collapse collapse" id="ubc7-unit-navigation">
+                    <ul class="nav">
+                        {% for x in site.nav %}
+                            {% if x.name == "CV" %}
+                                <li><a target="_blank" href="{{ x.link | relative_url }}">{{ x.name }}</a></li>
+                            {% else %}
+                                <li{% if page.url == x.link %} class="active"{% endif %}><a href="{{ x.link | relative_url}}">{{ x.name }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->

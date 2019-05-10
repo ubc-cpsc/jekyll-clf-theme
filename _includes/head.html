@@ -1,0 +1,98 @@
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - The University of British Columbia</title>
+
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        messageStyle: 'none',
+        tex2jax: {
+          inlineMath: [['$','$']],
+          displayMath: [['$$','$$']],
+          processEnvironments: false
+        },
+        // show equation numbers
+        TeX: {
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        },
+        'HTML-CSS': {
+          imageFont: null
+        }
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ site.author }}, {{ site.title }}">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    {% if page.description %}
+        {% assign desc = page.description %}
+    {% else %}
+        {% assign desc = site.description %}
+    {% endif %}
+    {% if page.url %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+    <meta name="description" content="{{ desc }}">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+
+    <!-- CLF minimal  -->
+    <link href="//cdn.ubc.ca/clf/7.0.4-minimal/css/minimal-clf-full-7.0.4-bw.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/github.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/jekyll-faculty-theme.css' | relative_url }}">
+
+    {% if site.favicon %}
+        <link rel="icon" type="image/ico" href="{{ site.favicon_location | relative_url }}">
+        <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location | relative_url }}">
+    {% endif %}
+    {% if site.twitter_username %}
+        <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
+    {% endif %}
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="{{ desc }}">
+    <meta name="og:title" content="{{ site.title }}">
+    <meta name="og:url" content="{{ url }}">
+    <meta name="og:type" content="article">
+    {% if site.og_image %}
+        <meta name="og:image" content="{{ site.og_image }}">
+    {% endif %}
+    {% if site.facebook_id %}
+        <meta name="fb:admins" content="{{ site.facebook_id }}">
+    {% endif %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ desc }}">
+    <meta name="twitter:url" content="{{ url }}">
+    {% if site.twitter_image %}
+        <meta name="twitter:image" content="{{ site.twitter_image }}">
+    {% else %}
+        <meta name="twitter:image" content="{{ site.profile_picture }}">
+    {% endif %}
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="//cdn.ubc.ca/clf/7.0.5/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//cdn.ubc.ca/clf/7.0.5/img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.ubc.ca/clf/7.0.5/img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.ubc.ca/clf/7.0.5/img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="//cdn.ubc.ca/clf/7.0.5/img/apple-touch-icon-57-precomposed.png">
+
+    {%- seo -%}
+    {%- feed_meta -%}

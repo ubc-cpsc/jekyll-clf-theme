@@ -1,0 +1,48 @@
+title: Jane Doe
+name: Jane Doe
+description: Site description goes here.
+
+baseurl: "/jekyll-faculty-theme"
+url: ""
+lang: "en"
+
+github_username: janedoe
+
+social:
+    name: Jane Doe
+    links:
+        - https://twitter.com/janedoe
+        - https://github.com/janedoe
+
+nav:
+ - name: Home
+   link: "/"
+ - name: About
+   link: "/about"
+
+## don't edit below here unless you want to customize beyond
+## changing the menus
+
+markdown: kramdown
+
+theme: jekyll-faculty-theme
+
+kramdown:
+  input: GFM
+  default_lang: clojure
+  syntax_highlighter: rouge
+
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  repository: assets/pdf
+  bibliography_template: bibliography
+
+# this is where you put your Google analytics tracking ID should you
+# wish to use Google analytics (a good idea -- it's free)
+tracking_id: #
