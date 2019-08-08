@@ -8,7 +8,7 @@
 <a data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</a>
 
 {% if link %}
-<a href="{{ site.url }}{{ link }}" onClick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
+<a href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
 {% endif %}
 
 <span id="{{ key }}_materials">
