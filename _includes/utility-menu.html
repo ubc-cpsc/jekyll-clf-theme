@@ -6,7 +6,7 @@
                     <form class="form-search" method="get" action="http://www.ubc.ca/search/refine/" role="search">
                         <input type="text" name="q" placeholder="Search this website" class="input-xlarge search-query">
                         <input type="hidden" name="label" value="Search UBC" />
-                        <input type="hidden" name="site" value="{{ site.url }}" />
+                        <input type="hidden" name="site" value="{{ site.url }}{{ site.baseurl }}" />
                         <button type="submit" class="btn">Search</button>
                     </form>
                 </div>
