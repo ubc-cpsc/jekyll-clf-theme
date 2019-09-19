@@ -1,0 +1,17 @@
+.paper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paper__thumb {
+  margin: 5px;
+  flex-grow: 1;
+  flex-basis: 200px;
+  min-width: 300px;
+}
+
+.paper__reference {
+  flex-grow: 1;
+  flex-basis: calc(100% - 220px);
+}
+

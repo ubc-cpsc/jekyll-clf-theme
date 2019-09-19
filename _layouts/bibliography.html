@@ -2,11 +2,11 @@
 ---
 
 {% if links.jpg %}
-  <img class="paper__thumb" src="{{ site.url }}{{ links.jpg }}" />
+  <div class="paper__thumb"><img src="{{ site.url }}{{ links.jpg }}" /></div>
 {% elsif links.png %}
-  <img class="paper__thumb" src="{{ site.url }}{{ links.png }}" />
+  <div class="paper__thumb"><img src="{{ site.url }}{{ links.png }}" /></div>
 {% elsif links.gif %}
-  <img class="paper__thumb" src="{{ site.url }}{{ links.gif }}" />
+  <div class="paper__thumb"><img src="{{ site.url }}{{ links.gif }}" /></div>
 {% endif %}
 
 <div class="paper__reference">
