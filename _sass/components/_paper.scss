@@ -4,14 +4,18 @@
 }
 
 .paper__thumb {
-  margin: 5px;
-  flex-grow: 1;
-  flex-basis: 200px;
-  min-width: 300px;
+  padding: 5px;
+  flex-shink: 0;
+  min-width: 200px;
+}
+
+.paper__thumb img {
+  display: block;
 }
 
 .paper__reference {
-  flex-grow: 1;
-  flex-basis: calc(100% - 220px);
+  min-width: 50%;
+  padding: 5px 10px;
+  flex: 3 0;
 }
 
