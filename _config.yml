@@ -42,6 +42,8 @@ scholar:
   style: apa
   repository: papers
   bibliography_template: bibliography
+  bibliography_item_attributes:
+    - class: bibliography__item
 
 # this is where you put your Google analytics tracking ID should you
 # wish to use Google analytics (a good idea -- it's free)
