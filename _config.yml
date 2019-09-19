@@ -40,7 +40,7 @@ plugins:
 
 scholar:
   style: apa
-  repository: assets/pdf
+  repository: papers
   bibliography_template: bibliography
 
 # this is where you put your Google analytics tracking ID should you
