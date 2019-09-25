@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button-link {
+  color: $link-color;
+  text-decoration-skip-ink: auto;
+  transition: color 0.5s ease-in;
+}
+
+.button-link:hover,
+.button-link:active {
+  color: darken($link-color, 20%);
+  text-decoration: underline;
+}

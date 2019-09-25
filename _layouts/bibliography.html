@@ -18,13 +18,13 @@
 <div class="paper__reference">
   {{ reference }}
   {% if entry.abstract %}
-    <a data-target="#{{ key }}_abstract" data-toggle="collapse" href="#{{ key }}_abstract" onclick='return false;'>ABS</a>
+    <button class="button button-link" data-target="#{{ key }}_abstract" data-toggle="collapse" href="#{{ key }}_abstract" onclick='return false;'>ABS</button>
   {% endif %}
 
-  <button data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</button>
+  <button class="button button-link" data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</button>
 
   {% if link %}
-    <a href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
+    <a class="button button-link" href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
   {% endif %}
 
   <span id="{{ key }}_materials">
