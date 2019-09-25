@@ -1,12 +1,18 @@
 ---
 ---
 
+{% if link %}
+  <a href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">
+{% endif %}
 {% if links.jpg %}
   <div class="paper__thumb"><img src="{{ site.url }}{{ links.jpg }}" /></div>
 {% elsif links.png %}
   <div class="paper__thumb"><img src="{{ site.url }}{{ links.png }}" /></div>
 {% elsif links.gif %}
   <div class="paper__thumb"><img src="{{ site.url }}{{ links.gif }}" /></div>
+{% endif %}
+{% if link %}
+  </a>
 {% endif %}
 
 <div class="paper__reference">
@@ -15,7 +21,7 @@
     <a data-target="#{{ key }}_abstract" data-toggle="collapse" href="#{{ key }}_abstract" onclick='return false;'>ABS</a>
   {% endif %}
 
-  <a data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</a>
+  <button data-target="#{{ key }}_bibtex" data-toggle="collapse" href="#{{ key }}_bibtex" onclick="_gaq.push(['_trackEvent', 'View', 'Bibliography', '{{ key }}']); return false;">BIB</button>
 
   {% if link %}
     <a href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
