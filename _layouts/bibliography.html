@@ -26,12 +26,12 @@
   {% if link %}
     <a class="button button-link" href="{{ site.url }}{{ link }}" onclick="_gaq.push(['_trackEvent', 'Download', 'PDF', '{{ key }}']);">PDF</a>
   {% endif %}
-
-  <span id="{{ key }}_materials">
-    {% if entry.abstract %}
-      <p id="{{ key }}_abstract" class="collapse">{{ entry.abstract }}</p>
-    {% endif %}
-
-    <div id="{{ key }}_bibtex" class="pre pre-scrollable collapse"><pre>{{ entry.bibtex }}</pre></div>
-  </span>
 </div>
+
+<div class="paper__materials" id="{{ key }}_materials">
+  {% if entry.abstract %}
+    <p id="{{ key }}_abstract" class="collapse">{{ entry.abstract }}</p>
+  {% endif %}
+
+  <div id="{{ key }}_bibtex" class="pre pre-scrollable collapse"><pre>{{ entry.bibtex }}</pre></div>
+</span>
