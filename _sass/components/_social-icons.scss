@@ -6,12 +6,16 @@
 /* CLF Social Icon Styles
 -------------------------------------------------- */
 
-/* VARIABLES */
+// VARIABLES
 $clf-social-icon-color: #002145;
 $clf-social-icon-color--hover: rgba($clf-social-icon-color, .9);
 
 
-/* GENERAL STYLES */
+.social-icons {
+  float: right;
+}
+
+// GENERAL STYLES
 #ubc7-unit-social-icons a {
   text-decoration: none;
 }
