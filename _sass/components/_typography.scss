@@ -16,8 +16,8 @@
     }
 }
 .content > :not(div) {
-  // Line measure.
-  max-width: 72rem;
+    // Line measure.
+    max-width: 90ch;
 }
 
 .content {
