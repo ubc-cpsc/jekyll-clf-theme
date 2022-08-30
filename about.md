@@ -10,7 +10,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 You can find the source code for UBC CS Faculty Theme at BitBucket:
 [jekyll][jekyll-organization] /
-[jekyll-clf-theme](https://bitbucket.org/UBCCS/jekyll-clf-theme)
+[jekyll-clf-theme](https://github.com/ubc-cpsc/jekyll-clf-theme.git)
 
 You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
