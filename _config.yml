@@ -2,7 +2,7 @@ title: Jane Doe
 name: Jane Doe
 description: Site description goes here.
 
-baseurl: "/jekyll-faculty-theme"
+baseurl: "/jekyll-clf-theme"
 url: ""
 lang: "en"
 
@@ -25,7 +25,7 @@ nav:
 
 markdown: kramdown
 
-theme: jekyll-faculty-theme
+theme: jekyll-clf-theme
 
 kramdown:
   input: GFM

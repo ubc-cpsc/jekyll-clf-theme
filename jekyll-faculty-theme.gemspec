@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-faculty-theme"
+  spec.name          = "jekyll-clf-theme"
   spec.version       = "0.1.1"
   spec.authors       = ["Joël Pittet"]
   spec.email         = ["pittet@cs.ubc.ca"]
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 3.8"
+  spec.add_runtime_dependency "jekyll", "~> 3.9"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-scholar", "~> 5.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.5"
