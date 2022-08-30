@@ -4,11 +4,7 @@
             <div class="container">
                 <div class="nav-collapse collapse">
                     {% for x in site.nav %}
-                        {% if x.name == "CV" %}
-                            <li><a target="_blank" href="{{ x.link | relative_url }}">{{ x.name }}</a></li>
-                        {% else %}
-                            <li{% if page.url == x.url %} class="active"{% endif %}><a href="{{ x.link | relative_url}}">{{ x.name }}</a></li>
-                        {% endif %}
+                        <li{% if page.url == x.url %} class="active"{% endif %}><a href="{{ x.link | relative_url}}">{{ x.name }}</a></li>
                     {% endfor %}
                 </div><!-- /.nav-collapse -->
             </div>

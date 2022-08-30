@@ -1,4 +1,5 @@
 title: Jane Doe
+unit: Computer Science
 name: Jane Doe
 description: Site description goes here.
 
@@ -15,10 +16,26 @@ social:
         - https://github.com/janedoe
 
 nav:
- - name: Home
-   link: "/"
- - name: About
-   link: "/about"
+  - name: Home
+    link: "/"
+  - name: About
+    link: "/about"
+    subnav:
+      - name: Contact
+        link: "/about/contact"
+        subnav:
+          - name: Jekyll on Heroku
+            link: jekyll-on-heroku.html
+  - name: Help
+    link: help.html
+  - name: Nested
+    link: "/nested"
+    subnav:
+      - name: Deep
+        link: "/nested/contact"
+        subnav:
+          - name: Down
+            link: /nested/contact/down
 
 ## don't edit below here unless you want to customize beyond
 ## changing the menus

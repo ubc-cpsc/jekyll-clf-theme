@@ -6,12 +6,10 @@
             <div class="container">
                 <div class="nav-collapse collapse" id="ubc7-unit-navigation">
                     <ul class="nav">
-                        {% for x in site.nav %}
-                            {% if x.name == "CV" %}
-                                <li><a target="_blank" href="{{ x.link | relative_url }}">{{ x.name }}</a></li>
-                            {% else %}
-                                <li{% if page.url == x.link %} class="active"{% endif %}><a href="{{ x.link | relative_url}}">{{ x.name }}</a></li>
-                            {% endif %}
+                        {% for item in site.nav %}
+                            <li{% if page.url == item.link %} class="active"{% endif %}>
+                                <a href="{{ item.link | relative_url}}">{{ item.name }}</a>
+                            </li>
                         {% endfor %}
                     </ul>
                 </div><!-- /.nav-collapse -->

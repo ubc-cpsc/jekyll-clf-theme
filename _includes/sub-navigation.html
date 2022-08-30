@@ -1,0 +1,15 @@
+
+    <ul class="nav nav-list bootstrap-sidenav">
+        {% for item in include.nav %}
+            <li{% if page.url == item.link %} class="active"{% endif %}>
+              {{level}}
+                <a href="{{ item.link | relative_url}}">
+                <div class="ubc7-arrow right-arrow"></div>
+                {{ item.name }}</a>
+
+                {% if item.subnav %}
+                    {% include sub-navigation.html nav=item.subnav level=level %}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
