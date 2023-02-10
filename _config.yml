@@ -1,4 +1,4 @@
-title: Jane Doe
+title: UBC Common Look and Feel (CLF)
 unit: Computer Science
 name: Jane Doe
 description: Site description goes here.
@@ -6,8 +6,6 @@ description: Site description goes here.
 baseurl: "/jekyll-clf-theme"
 url: ""
 lang: "en"
-
-github_username: janedoe
 
 social:
     name: Jane Doe
