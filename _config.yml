@@ -1,6 +1,6 @@
 title: UBC Common Look and Feel (CLF)
-unit: Computer Science
-name: Jane Doe
+#unit: Computer Science
+
 description: Site description goes here.
 
 baseurl: "/jekyll-clf-theme"
