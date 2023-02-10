@@ -1,0 +1,16 @@
+@import "../variables";
+
+.full-width-container {
+  background-color: #fff;
+}
+.full-width .full-width-container {
+  margin: 0 !important;
+}
+
+@media (max-width: 979px) {
+  .full-width #ubc7-header .container,
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -17,16 +17,8 @@
 @import 'unit';
 @import 'local.clf.fixes';
 
-// Institute Image.
-#ins-logo {
-  margin: 2rem auto;
-  display: block;
-  max-width: 300px;
-  text-align: center;
-}
-
-@import "components/paper";
-@import "components/button";
+@import "components/layout";
 @import "components/typography";
+@import "components/button";
 @import "components/navbar";
 @import "components/social-icons";
