@@ -21,19 +21,20 @@ nav:
     subnav:
       - name: Contact
         link: "/about/contact"
-        subnav:
-          - name: Jekyll on Heroku
-            link: jekyll-on-heroku.html
+      - name: Jekyll on Heroku
+        link: "/jekyll-on-heroku"
   - name: Help
-    link: help.html
+    link: "/help"
   - name: Nested
     link: "/nested"
     subnav:
       - name: Deep
-        link: "/nested/contact"
+        link: "/nested/deep"
         subnav:
           - name: Down
-            link: /nested/contact/down
+            link: "/nested/deep/down"
+  - name: Style Guide
+    link: styleguide
 
 ## don't edit below here unless you want to customize beyond
 ## changing the menus

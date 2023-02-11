@@ -1,0 +1,81 @@
+
+.side-menu {
+  margin-top: 2rem;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.nav {
+  margin-left: 0;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #0055b7;
+}
+
+
+.sidenav {
+  border-top: 1px solid #0055b7;
+}
+
+// General link style.
+.sidenav a {
+  text-decoration: none;
+  color: #002145;
+  border-bottom: 1px solid #0055b7;
+  padding: 10px 15px;
+  position: relative;
+}
+
+// Active state.
+// li.active-trail Once sorted on how.
+.sidenav li.active > a {
+  font-weight: 700;
+}
+.sidenav li.active > a {
+  color: #fff;
+  background-color: #08c;
+}
+.sidenav li.active > a:hover {
+  color: #fff;
+}
+
+
+// Second level page.
+.sidenav ul a {
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 1.35em;
+}
+
+// Third level page.
+.sidenav ul ul a {
+  padding-left: 60px;
+  font-size: 14px;
+  line-height: 1.35em;
+}
+
+
+// Arrows
+.sidenav .ubc7-arrow {
+  float: right;
+  margin-right: -6px;
+  margin-top: 2px;
+}
+.sidenav .active .ubc7-arrow
+.sidenav a:hover .ubc7-arrow {
+  background-position: -1113px -227px;
+}
+

@@ -1,14 +1,25 @@
+@import "../variables";
+
 ul,
 ol {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 1.94em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  // Override CLF.
+  margin-left: 0;
+  padding-left: 3rem;
+}
+
+// Override CLF.
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 li {
-  margin-bottom: 0.5em;
-}
-
-li {
+  // Override CLF to match default line-height.
   line-height: 1.5;
 }
