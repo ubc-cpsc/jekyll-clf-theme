@@ -35,6 +35,12 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/ubc-cpsc/jekyll-clf-theme.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
+## UBC HTML CLF
+
+- Based on https://clf.ubc.ca
+- With HTML templates available at
+https://github.com/UBCCM/clf-html-template
+
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
