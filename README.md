@@ -41,6 +41,18 @@ And then execute:
 
     $ bundle
 
+### Issue 2: Error 'cannot load such file -- kramdown-parser-gfm' when building site.
+
+Add this line to your `Gemfile`:
+
+```ruby
+gem "kramdown-parser-gfm"
+```
+
+And then execute:
+
+    $ bundle
+
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
