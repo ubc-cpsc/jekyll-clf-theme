@@ -27,6 +27,32 @@ Or install it yourself as:
 
     $ gem install jekyll-clf-theme
 
+## Troubleshooting
+
+### Issue 1: [Ruby versions greater than 3.0 do not have webrick](https://github.com/jekyll/jekyll/issues/8523). 
+
+Depending on your Ruby version you will need to add this line to your `Gemfile`:
+
+```ruby
+gem "webrick"
+```
+
+And then execute:
+
+    $ bundle
+
+### Issue 2: Error 'cannot load such file -- kramdown-parser-gfm' when building site.
+
+Add this line to your `Gemfile`:
+
+```ruby
+gem "kramdown-parser-gfm"
+```
+
+And then execute:
+
+    $ bundle
+
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
