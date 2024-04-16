@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-clf-theme"
-  spec.version       = "0.3.1"
+  spec.version       = "1.0.0"
   spec.authors       = ["Joël Pittet"]
   spec.email         = ["pittet@cs.ubc.ca"]
 
@@ -10,16 +10,19 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ubc-cpsc/jekyll-clf-theme"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
+  spec.metadata["plugin_type"] = "theme"
 
-  spec.add_runtime_dependency "jekyll", "~> 3.9"
-  spec.add_runtime_dependency "jekyll-feed", "~> 0.15"
-  spec.add_runtime_dependency "jekyll-scholar", "~> 5.0"
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
-  spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.0"
+  spec.files = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+  end
+
+  spec.add_runtime_dependency "jekyll", ">= 3.7", "< 5.0"
+  spec.add_runtime_dependency "jekyll-feed"
+  spec.add_runtime_dependency "jekyll-seo-tag"
+  spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
   spec.add_runtime_dependency "webrick", "~> 1.0"
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake", ">= 12.3.3"
 
 end
