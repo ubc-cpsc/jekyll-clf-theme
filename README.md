@@ -10,7 +10,7 @@ To experiment with this code, add some sample content and run `bundle exec jekyl
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-clf-theme"
+gem "jekyll-clf-theme", git: "git@github.com:ubc-cpsc/jekyll-clf-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
