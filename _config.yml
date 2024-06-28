@@ -52,14 +52,6 @@ highlighter: rouge
 
 plugins:
   - jekyll-feed
-  - jekyll-scholar
-
-scholar:
-  style: apa
-  repository: papers
-  bibliography_template: bibliography
-  bibliography_item_attributes:
-    class: paper
 
 # this is where you put your Google analytics tracking ID should you
 # wish to use Google analytics (a good idea -- it's free)
