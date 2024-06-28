@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-clf-theme"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Joël Pittet"]
   spec.email         = ["pittet@cs.ubc.ca"]
 
