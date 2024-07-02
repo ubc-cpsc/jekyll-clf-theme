@@ -23,10 +23,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install jekyll-clf-theme
-
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
